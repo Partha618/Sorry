@@ -96,7 +96,7 @@ no_button.addEventListener('click', () => {
 
     // Change image
     banner.src = images[clicks % images.length];
-    refreshBanner();
+    //refreshBanner();
 
     clicks++; // ONLY ONCE
 
