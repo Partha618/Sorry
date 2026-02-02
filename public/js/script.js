@@ -91,29 +91,29 @@ const images = [
 ];
 
 no_button.addEventListener('click', () => {
+
     let banner = document.getElementById('banner');
 
-    // Change image based on click count
+    // Change image
     banner.src = images[clicks % images.length];
-
-    clicks++;
-
     refreshBanner();
-});
 
-    clicks++;
-    // increase button height and width gradually to 250px
-    const sizes = [40, 50, 30, 35, 45]
+    clicks++; // ONLY ONCE
+
+    // increase yes button size
+    const sizes = [40, 50, 30, 35, 45];
     const random = Math.floor(Math.random() * sizes.length);
-    size += sizes[random]
+    size += sizes[random];
     yes_button.style.height = `${size}px`;
     yes_button.style.width = `${size}px`;
+
     let total = answers_no[language].length;
-    // change button text
+
+    // change NO button text
     if (i < total - 1) {
         no_button.innerHTML = answers_no[language][i];
         i++;
-    } else if (i === total - 1) {
+    } else {
         alert(answers_no[language][i]);
         i = 1;
         no_button.innerHTML = answers_no[language][0];
@@ -123,6 +123,7 @@ no_button.addEventListener('click', () => {
         size = 50;
     }
 });
+
 
 yes_button.addEventListener('click', () => {
     // change banner gif path
