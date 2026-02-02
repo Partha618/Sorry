@@ -65,13 +65,43 @@ let i = 1;
 let size = 50;
 let clicks = 0;
 
-no_button.addEventListener('click', () => {
+/*no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
     if (clicks === 0) {
         banner.src = "public/images/no.gif";
         refreshBanner();
-    }
+    } */
+let clicks = 0;
+
+const images = [
+    "public/images/no1.jpeg",
+    "public/images/no2.jpeg",
+    "public/images/no3.jpeg",
+    "public/images/no4.jpeg",
+    "public/images/no5.jpeg",
+    "public/images/no6.jpeg",
+    "public/images/no7.jpeg",
+    "public/images/no8.jpeg",
+    "public/images/no9.jpeg",
+    "public/images/no10.jpeg",
+    "public/images/no11.jpeg",
+    "public/images/no12.jpeg",
+    "public/images/no13.jpeg",
+    "public/images/no14.jpeg"
+];
+
+no_button.addEventListener('click', () => {
+    let banner = document.getElementById('banner');
+
+    // Change image based on click count
+    banner.src = images[clicks % images.length];
+
+    clicks++;
+
+    refreshBanner();
+});
+
     clicks++;
     // increase button height and width gradually to 250px
     const sizes = [40, 50, 30, 35, 45]
