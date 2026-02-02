@@ -6,7 +6,7 @@ const answers_no = {
         "Are you really realy sure???",
         "Think again?",
         "Don't believe in second chances?",
-        "Why are you being so cold?",
+        "please guduuu, i will never do it again?",
         "Maybe we can talk about it?",
         "I am not going to ask again!",
         "Ok now this is hurting my feelings!",
