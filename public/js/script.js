@@ -5,7 +5,7 @@ const answers_no = {
         "Are you really sure??",
         "Are you really realy sure???",
         "Think again gudu, i will never do it again?",
-        "Don't believe in second chances, pleeeeeeeeeeaasssee?",
+        "Don't you believe in second chances ?, pleeeeeeeeeeaasssee?",
         "Sorry guduuu, aru eku nulukao, please?",
         "I will do whatever you say ?",
         "I am not going to ask again guduuuuu!",
