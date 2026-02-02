@@ -72,7 +72,6 @@ let clicks = 0;
         banner.src = "public/images/no.gif";
         refreshBanner();
     } */
-let clicks = 0;
 
 const images = [
     "public/images/no1.jpeg",
@@ -128,7 +127,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "public/images/yes.gif";
+    banner.src = "public/images/yes.jpeg";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
